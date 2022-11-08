@@ -1,0 +1,16 @@
+
+# hw6 problem 2
+#
+# Name(s): İsmail Kavuran
+#
+
+# This is a placeholder whose code you'll replace:
+00 read r1 #read the value of r1
+01 read r2 #read the value of r2
+02 setn r3 1 #set r3 to 1
+03 jeqzn r2 07 #Check if r2 equals to 0. If it is, go to the line 08
+04 mul r3 r3 r1 #Multiply the value of r3 and r1 and save the result as r3
+05 addn r2 -1 #add -1 to r2
+06 jumpn 03 #Go to the line 03
+07 write r3 #Print the value of r3. This is result
+08 halt

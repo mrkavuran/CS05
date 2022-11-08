@@ -1,0 +1,22 @@
+# hw6 pr4 "recursive power"
+#
+# Name(s): Ismail Kavuran
+#
+# Hmmm...
+#
+# This is a placeholder - you'll replace this code...
+#   gold:  see the hw6pr4 description for starter code (power)
+#  black:  see the hw6pr4 description for more (the "towers" challenge)
+#
+
+00 read r1
+01 read r2
+02 setn r3 1
+03 jeqzn r2 09
+04 mul r3 r3 r1
+05 addn r2 -1
+06 jumpn 03
+07 nop
+08 nop
+09 write r3
+10 halt

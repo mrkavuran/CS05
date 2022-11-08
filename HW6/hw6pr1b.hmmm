@@ -1,0 +1,21 @@
+# hw6pr1b.hmmm will become a random-number generator  
+#
+# Name(s): İsmail Kavuran
+
+# Lab task #2: Expand this to become your random-number generator:
+#   (Note: this is starter code that correctly handles the inputs...)
+
+00 read r1    # input a
+01 read r2    # input c
+02 read r3    # input m
+03 read r4    # input X_0
+04 read r5    # input N00 
+05 jeqzn r5 13 #Check if r5=0, if it is, go to the line 13
+06 mul r6 r1 r4 #Multiply r1 and r4, save this value as r6
+07 add r7 r6 r2 #Add r6 and r2, save the result as r7
+08 mod r8 r7 r3 #Mod of r7 and r3, save as r8
+09 write r8 #write the value of r8
+10 copy r4 r8 #copy the register of r4 to r8
+11 addn r5 -1 #Substract one from r5 value
+12 jgtzn r5 05 #Check if r5 is bigger than 0, if it is, jump to line 05
+13 halt #Stop the program
